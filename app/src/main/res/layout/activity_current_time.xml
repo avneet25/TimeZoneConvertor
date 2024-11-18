@@ -1,0 +1,86 @@
+<!-- res/layout/activity_current_time.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Current Time Label (Top center) -->
+    <TextView
+        android:id="@+id/tv_current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Time"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Eastern Time Label (Center) -->
+    <TextView
+        android:id="@+id/tv_et_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eastern Time (ET):"
+        android:textSize="22sp"
+        android:layout_below="@id/tv_current_time"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:layout_marginTop="50dp"/>
+
+    <!-- Eastern Time (TextView) -->
+    <TextView
+        android:id="@+id/tv_et_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:layout_below="@id/tv_et_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Indian Standard Time Label (Center) -->
+    <TextView
+        android:id="@+id/tv_ist_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indian Standard Time (IST):"
+        android:textSize="22sp"
+        android:layout_below="@id/tv_et_time"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Indian Standard Time (TextView) -->
+    <TextView
+        android:id="@+id/tv_ist_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:layout_below="@id/tv_ist_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Refresh Button (Center) -->
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:layout_below="@id/tv_ist_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Back Button (Bottom Left) -->
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="50dp" />
+
+</RelativeLayout>
